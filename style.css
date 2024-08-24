@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+/* Общий стиль для контейнера с фильмами */
+.wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.rating_p {
+    color: black;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: aquamarine;
+    padding: 4px;
+    position: absolute;
+    top: 10px; /* Отступ сверху */
+    right: 10px; /* Отступ справа */      
+    
+}
+
+.wrap:hover {
+    transform: scale(1.05);
+}
+
+/* Стиль для постеров фильмов */
+.wrap img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Стиль для названий фильмов */
+.wrap h3 {
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    text-align: center;
+}
+
+/* Стиль для рейтинга фильмов */
+.wrap p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Стиль для описания жанров */
+.genresWrap {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Общий стиль для формы поиска */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* Стиль для поля ввода (input) */
+form input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #3498db;
+}
+
+/* Стиль для кнопки поиска */
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Дополнительный стиль для поля поиска при наведении */
+form input:hover {
+    border-color: #2980b9;
+}
+
+
+/* Стиль для кнопки "Назад" */
+.details-back-button {
+    font-size: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 195px 20px;
+    width: 82px;
+    height: 60px;
+}
+
+.details-back-button:hover {
+    background-color: #2980b9;
+}
+
+/* Стиль для постера в деталях фильма */
+.details-poster {
+    width: 300px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Стиль для описания фильма */
+.details-description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Стиль для кнопок пагинации */
+.paginationWrap button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.paginationWrap button.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.paginationWrap button:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+/* Стиль для основного контейнера, куда выводятся фильмы и детали */
+.output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
